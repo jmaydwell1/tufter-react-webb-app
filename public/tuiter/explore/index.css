@@ -1,0 +1,145 @@
+/* .rounded-corners-all-around {
+    border-radius: 50px;
+   }
+
+.bg-color-search {
+background-color: lightgray;
+}
+
+.fg-color-search {
+    color: darkgray
+} */
+
+.wd-search-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.wd-search-input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgray;
+    color: darkgray;
+    font-size: 16px;
+    width: 500px;
+    padding-left: 40px;
+}
+
+.wd-search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.wd-gear-icon {
+    position: absolute;
+    font-size: 30px;
+    height: 10px; /* Adjust the height value as needed */
+    margin-left: 90px;
+    margin-top: 5px; /* Adjust the margin value as needed */
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+    display: flex;
+}
+
+li {
+    margin-right: 55px; /* Adjust the margin value as needed */
+}
+
+.wd-tab {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px; /* Adjust the padding value as needed */
+    cursor: pointer;
+}
+
+.wd-tab-text {
+    display: inline-block;
+    padding-bottom: 2px; /* Adjust the padding value as needed */
+    border-bottom: 2px solid transparent; /* Initial border style */
+}
+
+.wd-selected-tab .wd-tab-text {
+    border-bottom-color: blue; /* Change the border color for the selected tab */
+}
+
+.wd-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.wd-image {
+    display: block;
+    width: 100%; /* Adjust the width as needed */
+    height: 200px;
+}
+
+.wd-image-heading {
+    position: absolute;
+    bottom: 0px; /* Adjust the distance from the bottom as needed */
+    left: 0px; /* Adjust the distance from the left as needed */
+    color: white;
+    font-size: 24px; /* Adjust the font-size as needed */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow effect to the text */
+}
+
+
+.wd-tuit-card {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.wd-tuit-card .wd-card-body {
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.wd-tuit-card .wd-card-title {
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.wd-tuit-card .wd-card-text {
+    font-size: 10px;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+  }
+  
+  .overlay h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
