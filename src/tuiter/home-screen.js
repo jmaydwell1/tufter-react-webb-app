@@ -1,4 +1,13 @@
+import TuitList from "./tuits/tuit-list";
+import WhatsHappening from "./whats-happening";
+
 function HomeScreen() {
-    return <h1>Home</h1>;
-   }
-   export default HomeScreen;
+    return (
+        <div>
+            <h1>Home</h1>
+            <WhatsHappening />
+            <TuitList />
+        </div>
+    );
+}
+export default HomeScreen;
