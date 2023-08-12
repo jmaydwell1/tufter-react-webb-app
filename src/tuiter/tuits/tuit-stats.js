@@ -2,6 +2,7 @@ import React from "react";
 import { FaComment, FaRetweet, FaHeart, FaShare } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { likeTuit } from "../reducers/tuits-reducer";
+import { updateTuitThunk } from "../services/tuits-thunks";
 
 const TuitStats = ({ tuit }) => {
   const { replies, retuits, likes, _id, liked } = tuit;
@@ -19,8 +20,10 @@ const TuitStats = ({ tuit }) => {
           {retuits}
         </span>
         <span style={{ marginRight: "25px" }}>
-          <FaHeart style={{ fill: liked ? "red": "none", stroke: "black", strokeWidth: "15px" }} onClick={ () => dispatch(likeTuit({_id:_id}))}/>
-          {likes}
+          <FaHeart style={{ fill: liked ? "red": "none", stroke: "black", strokeWidth: "15px" }} 
+          onClick={ () => 
+          dispatch(updateTuitThunk({...tuit, likes: tuit.likes+1}))}/>
+          <span className="ms-2">{tuit.likes}</span>
         </span>
         <span>
           <FaShare style={{ fill: "none", stroke: "black", strokeWidth: "15px" }} />

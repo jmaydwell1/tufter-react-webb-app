@@ -4,7 +4,7 @@ import { BsFileEarmarkBinary } from "react-icons/bs";
 import {MdFormatListBulleted} from "react-icons/md";
 import {BsEmojiSmile} from "react-icons/bs";
 import {HiOutlineLocationMarker} from "react-icons/hi";
-import { createTuit } from "./reducers/tuits-reducer";
+import {createTuitThunk} from "./services/tuits-thunks";
 import { useDispatch } from "react-redux";
 
 
@@ -13,9 +13,9 @@ const WhatsHappening = () => {
  const dispatch = useDispatch();
  const tuitClickHandler = () => {
     const newTuit = {
-        title: whatsHappening
+        tuit: whatsHappening
       }
-      dispatch(createTuit(newTuit));
+      dispatch(createTuitThunk(newTuit));
       setWhatsHappening("");   
  }
  return (
