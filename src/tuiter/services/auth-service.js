@@ -16,8 +16,8 @@ export const logout = async () => {
     const response = await api.post(`${USERS_URL}/logout`);
     return response.data;
 };
-export const profile = async (_id) => {
-const response = await api.get(`${USERS_URL}/${_id}`);
+export const profile = async () => {
+const response = await api.post(`${USERS_URL}`);
 return response;
 };
 export const updateUser = async (user) => {

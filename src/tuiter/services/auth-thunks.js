@@ -9,9 +9,9 @@ export const loginThunk = createAsyncThunk(
     }
 );
 export const profileThunk = createAsyncThunk(
-    "auth/profile", async () => {
-        const {_id} = JSON.parse(localStorage.getItem("user"));
-        const response = authService.profile(_id);
+    "auth/profile", async (id) => {
+        // const {_id} = JSON.parse(localStorage.getItem("user"));
+        const response = authService.profile(id);
         return response.data;
     }
 );
