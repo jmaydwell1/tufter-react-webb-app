@@ -9,10 +9,10 @@ export const loginThunk = createAsyncThunk(
     }
 );
 export const profileThunk = createAsyncThunk(
-    "auth/profile", async (id) => {
+    "auth/profile", async () => {
         // const {_id} = JSON.parse(localStorage.getItem("user"));
-        const response = authService.profile(id);
-        return response.data;
+        const user = await authService.profile();
+        return user;
     }
 );
 export const logoutThunk = createAsyncThunk(
@@ -22,8 +22,8 @@ export const logoutThunk = createAsyncThunk(
 );
 export const updateUserThunk = createAsyncThunk(
     "user/updateUser", async (user) => {
-        await authService.updateUser(user);
-        return user;
+        const newUser = await authService.updateUser(user);
+        return newUser;
     }
 );
 export const registerThunk = createAsyncThunk(
