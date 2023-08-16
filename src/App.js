@@ -8,17 +8,17 @@ import { Routes, Route, Navigate } from 'react-router';
 
 function App() {
   return (
-    <HashRouter>
-      <div className="container">
-      <Routes>
-          <Route path="/" element={<Navigate to="/labs"/>}/>
-          <Route path="/labs/*"   element={<Labs/>}/>
-          <Route path="/hello-world"   element={<HelloWorld/>}/>
-          <Route path="/tuiter/*"   element={<Tuiter/>}/>
-        </Routes>
-
-      </div>
-    </HashRouter>
+    
+      <HashRouter>
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Navigate to="/labs" />} />
+            <Route path="/labs/*" element={<Labs />} />
+            <Route path="/hello-world" element={<HelloWorld />} />
+            <Route path="/tuiter/*" element={<Tuiter />} />
+          </Routes> 
+        </div>
+      </HashRouter>
   );
 }
 

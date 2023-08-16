@@ -37,7 +37,7 @@ const TuitItem = (
                             {tuit.userName} <span className="fw-normal">{tuit.handle} . {tuit.time}</span>
                         </div>
                     </div>
-                    <div>{tuit.title}</div>
+                    <div>{tuit.tuit}</div>
                     <TuitStats tuit={tuit} />
                 </div>
             </div>
